@@ -12,7 +12,15 @@ video{
     width:100%;height:100%;
 }
 .controls{
-    width:100%;height:30px;background: rgba(200,200,200,0.6);
-    position: absolute;left:0;bottom: 0;display:none
+    width:100%;height:50px;background: rgba(200,200,200,0.6);
+    position: absolute;left:0;bottom: 0;display:flex;
+    align-items:center ;
+    justify-content: space-around;
 
+
+}
+.playBtn{
+    width:30px;height:30px;
+    background: url("/img/play.png");
+    background-size: 100%;
 }
