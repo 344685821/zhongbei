@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+   div{
+       width:96px;height:48px;
+       border:2px solid #000;
+       border-bottom: 50px solid #000;
+       border-radius:50% ;
+       position: absolute;left:0;top:0;
+       right:0;bottom: 0;margin:auto;
+       transition: transform 2s ease;
+   }
+
+    div:before{
+        content: "";
+        width:8px;height:8px;border:20px solid #000;
+        background: #fff;
+        position: absolute;
+        left:0;top:50%;
+        border-radius: 50%;
+    }
+
+   div:after{
+       content: "";
+       width:8px;height:8px;border:20px solid #fff;
+       background: #000;
+       position: absolute;
+       right:0;top:50%;
+       border-radius: 50%;
+   }
+</style>
+<script>
+    window.onload=function () {
+        var div=document.querySelector("div");
+        div.onmouseover=function () {
+            this.style.transform="rotate(90deg)";
+        }
+    }
+</script>
+<body>
+   <div></div>
+</body>
+</html>
