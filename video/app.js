@@ -9,7 +9,16 @@ var index = require('./routes/index');
 var users = require('./routes/users');
 
 var app = express();
-app.listen(8888,function () {
+var server = require('http').createServer(app);
+var io = require('socket.io')(server);
+io.on('connection', function(socket){
+
+    socket.on("client",function (e) {
+        socket.emit("server",e);
+        socket.broadcast.emit("server",e);
+    })
+});
+server.listen(8888,function () {
     console.log("....");
 })
 
