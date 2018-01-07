@@ -8,7 +8,7 @@ socket.on("server",function (e) {
         padding:"5px",
         animation:"danmu 5s linear infinite"
     });
-    $(".danmu input").val("")
+
 })
 class parent{
     constructor(el){
@@ -156,6 +156,7 @@ class danmu extends parent{
         if(e.keyCode==13){
             var text=($(".danmu input").val());
             socket.emit("client",text);
+            $(".danmu input").val("")
 
         }
     }
