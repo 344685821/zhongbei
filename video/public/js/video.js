@@ -42,7 +42,7 @@ class video extends parent{
     }
     template() {
       this.html=   `
-      <video src="/video1.mp4"> </video>
+      <video src="/1080.mp4"> </video>
     `
     }
 
@@ -302,7 +302,7 @@ class speed extends parent{
         return `
         
           .speed{
-            width:80px;height:30px;position:relative;
+            width:60px;height:30px;position:relative;
             border:1px solid #000;
             border-radius:5px;text-align:center;
             line-height:30px;
@@ -352,6 +352,101 @@ class speed extends parent{
 
 }
 
+class change extends parent{
+    constructor(el){
+        super(el);
+        $(".change").mouseenter(this.show);
+        $(".change").mouseleave(this.hide);
+        $(".change-opt").click(this.click);
+    }
+    click(){
+        $(".change-opt").removeClass("change-opt-active");
+        $(this).addClass("change-opt-active");
+        var curr=$("video")[0].currentTime;
+        $("video")[0].src=$(this).attr("attr")+".mp4";
+        $("video")[0].play();
+        $("video")[0].currentTime=curr;
+
+    }
+
+    show(){
+        $(".change-opt-box").css("display","flex")
+    }
+    hide(){
+        $(".change-opt-box").css("display","none")
+    }
+
+
+    css(){
+        return `
+        
+          .change{
+            width:60px;height:30px;position:relative;
+            border:1px solid #000;
+            border-radius:5px;text-align:center;
+            line-height:30px;
+            color:#fff;
+            z-index:5;
+          }
+          .change-title{
+            width:100%;height:100%;
+          }
+          .change-opt-box{
+            width:100%;height:100px;
+            position:absolute;left:0;bottom:30px;
+            display:none;
+             flex-direction: column;
+             background:rgba(200,200,200,.7);
+          }
+          .change-opt{
+           cursor:pointer;
+          }
+          .change-opt-active{
+             color:orange;
+          }
+        `
+    }
+    template(){
+        this.html=`
+        
+          <div class="change">
+             <div class="change-title">清晰度</div>
+             <div class="change-opt-box"> 
+               <div class="change-opt" attr="1080"> 
+                 高清
+               </div>
+               <div class="change-opt change-opt-active" attr="720"> 
+                普通
+               </div>
+               <div class="change-opt" attr="360"> 
+                 流畅
+               </div>
+              
+             </div>
+           </div> 
+        `
+    }
+
+}
+
+class screen extends parent{
+    constructor(el){
+        super(el)
+    }
+    css(){
+        return `
+          .screen{
+             width:31px;height:31px;
+             background:url("/img/full.png")
+          }
+        `
+    }
+    template(){
+        this.html=`
+         <div class="screen"> </div>
+        `
+    }
+}
 
 class run{
     constructor(){
@@ -362,6 +457,8 @@ class run{
         new danmu(control);
         new danmuflag(control);
         new speed(control)
+        new change(control);
+        new screen(control)
         new progress(control);
         this.createCss();
     }
