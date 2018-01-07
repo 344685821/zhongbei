@@ -8,7 +8,7 @@ class parent{
     }
     addCss(){
        if(this.css){
-           parent.cssText+=this.css;
+           parent.cssText+=this.css();
        }
     }
     render(){
@@ -21,6 +21,13 @@ class video extends parent{
     constructor(el){
         super(el);
     }
+    css(){
+        return `
+         video{
+    width:100%;height:100%;
+}
+        `
+    }
     template() {
       this.html=   `
       <video src="/video1.mp4"> </video>
@@ -32,13 +39,22 @@ class video extends parent{
 class controls extends parent{
     constructor(el){
       super(el);
+      $(".video-box").mouseenter(this.enter);
+      $(".video-box").mouseleave(this.out);
+    }
+    enter(){
+        $(".controls").css("display","flex")
+    }
+    out(){
+        $(".controls").css("display","none")
     }
     css(){
         return `
           .controls{
-            width:100%;height:50px;
-            position:absolute;left:0;bottom:0;
-            background:rgba(200,200,200,.6);
+           width:100%;height:50px;background: rgba(200,200,200,0.6);
+    position: absolute;left:0;bottom: 0;display:none;
+    align-items:center ;
+    justify-content: space-around;
           }
         `
     }
@@ -67,7 +83,8 @@ class play extends parent{
         return `
           .playBtn{
             width:30px;height:30px;
-            background:url("/img/play.png");
+    background: url("/img/play.png");
+    background-size: 100%;
           }
         `
     }
