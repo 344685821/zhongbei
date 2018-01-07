@@ -95,14 +95,95 @@ class play extends parent{
     }
 }
 
+class time extends parent{
+    constructor(el){
+        super(el)
+        $("video")[0].oncanplay=()=>{
+            this.can();
+        }
+        $("video")[0].ontimeupdate=()=>{
+            this.play();
+        }
+    }
+    can(){
+        var timestr= this.timeTranform($("video")[0].currentTime)+"/"+this.timeTranform($("video")[0].duration);
+        $(".time").html(timestr)
+
+    }
+    play(){
+        var timestr= this.timeTranform($("video")[0].currentTime)+"/"+this.timeTranform($("video")[0].duration);
+        $(".time").html(timestr)
+    }
+    timeTranform(time){
+
+        var time=Math.round(time);
+        var min=parseInt(time/60);
+        min=min<10?"0"+min:min;
+        time%=60;
+        time=time<10?"0"+time:time;
+        return min+":"+time;
+    }
+    css(){
+        return `
+        .time{
+          color:#fff;
+        }
+        `
+    }
+    template(){
+        this.html=`<div class="time"></div>`
+    }
+}
+
+class danmu extends parent{
+    constructor(el){
+        super(el);
+        $(".danmu input").keydown(this.down);
+    }
+    down(e){
+        if(e.keyCode==13){
+
+        }
+    }
+    css(){
+        return `
+         .danmu{
+            width:120px;height:30px;
+            border:1px solid #000;
+            border-radius:5px;
+         }
+         input{
+           width:100%;height:100%;
+           border:none;
+           border-radius:5px;
+           background:rgba(200,200,200,.8);
+           color:red;
+         }
+         
+         input:focus{
+           outline:none;
+         }
+        `
+    }
+    template(){
+        this.html=`
+          <div class="danmu"> 
+            <input type="text">
+          </div>
+        `
+    }
+}
 
 class run{
     constructor(){
         new video();
         var control=new controls().dom;
         new play(control)
+        new time(control)
+        new danmu(control);
         this.createCss();
     }
+
     createCss(){
         $("<style></style>").html(parent.cssText).appendTo("body");
     }

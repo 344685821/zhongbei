@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7778e0ea-d33f-4216-8483-6389b32804d3" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/video/app.js" afterPath="$PROJECT_DIR$/video/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/video/public/css/video.css" afterPath="$PROJECT_DIR$/video/public/css/video.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/video/public/js/video.js" afterPath="$PROJECT_DIR$/video/public/js/video.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -43,13 +40,16 @@
       <file leaf-file-name="video.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/video/public/js/video.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="38" column="29" lean-forward="false" selection-start-line="38" selection-start-column="29" selection-end-line="38" selection-end-column="29" />
+            <state relative-caret-position="296">
+              <caret line="144" column="11" lean-forward="false" selection-start-line="144" selection-start-column="11" selection-end-line="144" selection-end-column="11" />
               <folding>
                 <element signature="n#parent#0" expanded="false" />
+                <element signature="n#!!block;n#constructor#0;n#parent#0" expanded="false" />
                 <element signature="n#video#0" expanded="false" />
                 <element signature="n#controls#0" expanded="false" />
                 <element signature="n#play#0" expanded="false" />
+                <element signature="n#time#0" expanded="false" />
+                <marker date="1515292005767" expanded="true" signature="3527:3577" ph="..." />
               </folding>
             </state>
           </provider>
@@ -353,15 +353,16 @@
       <workItem from="1515199419413" duration="4668000" />
       <workItem from="1515205924867" duration="11190000" />
       <workItem from="1515228984078" duration="4516000" />
-      <workItem from="1515283683811" duration="3393000" />
+      <workItem from="1515283683811" duration="6671000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23767000" />
+    <option name="totallyTimeSpent" value="27045000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16983524" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -369,7 +370,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32974428" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.48317632" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.48317632" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -414,9 +415,12 @@
           <caret line="93" column="10" lean-forward="false" selection-start-line="93" selection-start-column="10" selection-end-line="93" selection-end-column="10" />
           <folding>
             <element signature="n#parent#0" expanded="false" />
+            <element signature="n#!!block;n#constructor#0;n#parent#0" expanded="false" />
             <element signature="n#video#0" expanded="false" />
             <element signature="n#controls#0" expanded="false" />
             <element signature="n#play#0" expanded="false" />
+            <element signature="n#time#0" expanded="false" />
+            <marker date="1515292005767" expanded="true" signature="3527:3577" ph="..." />
           </folding>
         </state>
       </provider>
@@ -523,13 +527,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/video/public/js/video.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="38" column="29" lean-forward="false" selection-start-line="38" selection-start-column="29" selection-end-line="38" selection-end-column="29" />
+        <state relative-caret-position="296">
+          <caret line="144" column="11" lean-forward="false" selection-start-line="144" selection-start-column="11" selection-end-line="144" selection-end-column="11" />
           <folding>
             <element signature="n#parent#0" expanded="false" />
+            <element signature="n#!!block;n#constructor#0;n#parent#0" expanded="false" />
             <element signature="n#video#0" expanded="false" />
             <element signature="n#controls#0" expanded="false" />
             <element signature="n#play#0" expanded="false" />
+            <element signature="n#time#0" expanded="false" />
+            <marker date="1515292005767" expanded="true" signature="3527:3577" ph="..." />
           </folding>
         </state>
       </provider>
