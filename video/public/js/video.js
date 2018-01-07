@@ -139,6 +139,7 @@ class time extends parent{
         return `
         .time{
           color:#fff;
+          font-size:13px;
         }
         `
     }
@@ -431,7 +432,23 @@ class change extends parent{
 
 class screen extends parent{
     constructor(el){
-        super(el)
+        super(el);
+        $(".screen").click(this.zoom);
+    }
+    zoom(){
+        if(document.webkitIsFullScreen){
+            document.webkitCancelFullScreen();
+            $(".video-box").css({
+                width:"500px",
+                height:"300px"
+            })
+        }else {
+            $(".video-box").css({
+                width:"100%",
+                height:"100%"
+            })
+            $(".video-box")[0].webkitRequestFullScreen()
+        }
     }
     css(){
         return `
@@ -448,6 +465,44 @@ class screen extends parent{
     }
 }
 
+class volume extends parent{
+    constructor(el){
+        super(el);
+        $(".add").click(this.add);
+        $(".deicre").click(this.deicre);
+    }
+    add(){
+        var curr=$("video")[0].volume;
+        curr=curr+0.1>1?1:curr+0.1;
+        $("video")[0].volume=curr;
+    }
+    deicre(){
+        var curr=$("video")[0].volume;
+        curr=curr-0.1<0?0:curr-0.1;
+        $("video")[0].volume=curr;
+    }
+
+    css(){
+        return `
+         .volume{
+           width:50px;height:30px;
+           font-size:30px;
+           color:#fff;
+           cursor:pointer;
+           font-weight:bold;
+           line-height:30px;
+         } 
+       
+        `
+    }
+    template(){
+        this.html=`
+         <div class="volume"> 
+           <span class="add">+</span> <span class="deicre">-</span>
+         </div>
+        `
+    }
+}
 class run{
     constructor(){
         new video();
@@ -458,6 +513,8 @@ class run{
         new danmuflag(control);
         new speed(control)
         new change(control);
+
+        new volume(control)
         new screen(control)
         new progress(control);
         this.createCss();
