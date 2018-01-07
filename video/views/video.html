@@ -14,17 +14,15 @@
 
     </div>
     <script src="/js/socket.io.js"></script>
-    <script src="/js/jquery-3.2.1.js"></script>
-    <script src="/js/video.js"></script>
+
     <script>
         var socket = io('http://localhost:8888');
 
-        socket.on("server",function (e) {
-            console.log(e);
-        })
-        document.onkeydown=function(e){
-            socket.emit("client",String.fromCharCode(e.keyCode));
-        }
+
+
     </script>
+    <script src="/js/jquery-3.2.1.js"></script>
+    <script src="/js/video.js"></script>
+
 </body>
 </html>

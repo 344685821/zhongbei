@@ -1,3 +1,15 @@
+socket.on("server",function (e) {
+    $("<div></div>").html(e).appendTo(".video-box").css({
+        position:"absolute",
+        left:"100%",
+        top:($(".video-box").height()-20)*Math.random(),
+        border:"1px solid #555",
+        borderRadius:"5px",
+        padding:"5px",
+        animation:"danmu 5s linear infinite"
+    });
+    $(".danmu input").val("")
+})
 class parent{
     constructor(el){
         this.el=el||".video-box";
@@ -142,6 +154,8 @@ class danmu extends parent{
     }
     down(e){
         if(e.keyCode==13){
+            var text=($(".danmu input").val());
+            socket.emit("client",text);
 
         }
     }
@@ -162,6 +176,16 @@ class danmu extends parent{
          
          input:focus{
            outline:none;
+         }
+         
+         @keyframes danmu{
+          0%{
+            left:100%;
+          }
+          
+          100%{
+          left:0
+          }
          }
         `
     }
