@@ -1,5 +1,5 @@
 socket.on("server",function (e) {
-    $("<div></div>").html(e).appendTo(".video-box").css({
+    $("<div class='danmubox'></div>").html(e).appendTo(".video-box").css({
         position:"absolute",
         left:"100%",
         top:($(".video-box").height()-20)*Math.random(),
@@ -113,9 +113,9 @@ class time extends parent{
         $("video")[0].oncanplay=()=>{
             this.can();
         }
-        $("video")[0].ontimeupdate=()=>{
+        $("video")[0].addEventListener("timeupdate",()=>{
             this.play();
-        }
+        })
     }
     can(){
         var timestr= this.timeTranform($("video")[0].currentTime)+"/"+this.timeTranform($("video")[0].duration);
@@ -199,6 +199,77 @@ class danmu extends parent{
     }
 }
 
+class danmuflag extends parent{
+    constructor(el){
+        super(el);
+        this.flag=true;
+        $(".danmuflag").click(()=>{
+            this.click();
+        });
+    }
+    click(){
+
+        if(this.flag){
+            $(".danmuflag").css("backgroundImage","url(/img/danmu.png)");
+             $(".danmubox").css("display","none")
+            this.flag=false;
+        }else{
+            $(".danmuflag").css("backgroundImage","url(/img/danmu-active.png)");
+            this.flag=true;
+            $(".danmubox").css("display","block")
+        }
+    }
+    css(){
+        return `
+          .danmuflag{
+              width:37px;height:37px;
+              background:url("/img/danmu-active.png");
+          }
+        `
+    }
+    template(){
+        this.html=`
+         <div class="danmuflag"> </div>
+        `
+    }
+}
+
+class progress extends parent{
+    constructor(el){
+        super(el);
+        $("video")[0].addEventListener("timeupdate",this.play)
+    }
+    play(){
+        var bili=$("video")[0].currentTime/$("video")[0].duration*100+"%";
+        $(".bar").css("width",bili);
+
+    }
+
+    css(){
+        return `
+          .progress{
+            width:100%;height:5px;
+            position:absolute;
+            left:0;top:0;
+          }
+          .progress .bar{
+            width:0%;height:100%;
+            background:orange;
+            position:absolute;left:0;top:0;
+          }
+        `
+    }
+
+    template(){
+        this.html=`
+          <div class="progress"> 
+             <div class="bar"> </div>
+          </div>
+        `
+    }
+}
+
+
 class run{
     constructor(){
         new video();
@@ -206,6 +277,8 @@ class run{
         new play(control)
         new time(control)
         new danmu(control);
+        new danmuflag(control);
+        new progress(control);
         this.createCss();
     }
 
