@@ -238,6 +238,12 @@ class progress extends parent{
     constructor(el){
         super(el);
         $("video")[0].addEventListener("timeupdate",this.play)
+        $(".progress").click(this.click)
+    }
+    click(e){
+        var bili=(e.offsetX)/$(".progress").width();
+        $(".bar").css("width",bili*100+"%");
+        $("video")[0].currentTime=$("video")[0].duration*bili;
     }
     play(){
         var bili=$("video")[0].currentTime/$("video")[0].duration*100+"%";
@@ -251,6 +257,8 @@ class progress extends parent{
             width:100%;height:5px;
             position:absolute;
             left:0;top:0;
+            border-bottom:1px solid #ccc;
+            cursor:pointer;
           }
           .progress .bar{
             width:0%;height:100%;
@@ -269,6 +277,81 @@ class progress extends parent{
     }
 }
 
+class speed extends parent{
+    constructor(el){
+        super(el);
+        $(".speed").mouseenter(this.show);
+        $(".speed").mouseleave(this.hide);
+        $(".speed-opt").click(this.click);
+    }
+    click(){
+        $(".speed-opt").removeClass("speed-opt-active");
+        $(this).addClass("speed-opt-active");
+        $("video")[0].playbackRate=$(this).html();
+    }
+
+    show(){
+        $(".speed-opt-box").css("display","flex")
+    }
+    hide(){
+        $(".speed-opt-box").css("display","none")
+    }
+
+
+    css(){
+        return `
+        
+          .speed{
+            width:80px;height:30px;position:relative;
+            border:1px solid #000;
+            border-radius:5px;text-align:center;
+            line-height:30px;
+            color:#fff;
+            z-index:5;
+          }
+          .speed-title{
+            width:100%;height:100%;
+          }
+          .speed-opt-box{
+            width:100%;height:130px;
+            position:absolute;left:0;bottom:30px;
+            display:none;
+             flex-direction: column;
+             background:rgba(200,200,200,.7);
+          }
+          .speed-opt{
+           cursor:pointer;
+          }
+          .speed-opt-active{
+             color:orange;
+          }
+        `
+    }
+    template(){
+        this.html=`
+        
+          <div class="speed">
+             <div class="speed-title">速度</div>
+             <div class="speed-opt-box"> 
+               <div class="speed-opt"> 
+                 0.5
+               </div>
+               <div class="speed-opt speed-opt-active"> 
+                1
+               </div>
+               <div class="speed-opt"> 
+                 1.5
+               </div>
+               <div class="speed-opt"> 
+                 2
+               </div>
+             </div>
+           </div> 
+        `
+    }
+
+}
+
 
 class run{
     constructor(){
@@ -278,6 +361,7 @@ class run{
         new time(control)
         new danmu(control);
         new danmuflag(control);
+        new speed(control)
         new progress(control);
         this.createCss();
     }

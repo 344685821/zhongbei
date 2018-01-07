@@ -22,8 +22,8 @@
       <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/video/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="16" column="12" lean-forward="false" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="32" />
+            <state relative-caret-position="210">
+              <caret line="20" column="32" lean-forward="true" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -32,7 +32,7 @@
       <file leaf-file-name="video.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/video/views/video.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
+            <state relative-caret-position="330">
               <caret line="11" column="6" lean-forward="false" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
               <folding />
             </state>
@@ -42,9 +42,10 @@
       <file leaf-file-name="video.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/video/public/js/video.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="248">
-              <caret line="255" column="20" lean-forward="false" selection-start-line="255" selection-start-column="20" selection-end-line="255" selection-end-column="20" />
+            <state relative-caret-position="-961">
+              <caret line="285" column="5" lean-forward="true" selection-start-line="285" selection-start-column="5" selection-end-line="285" selection-end-column="5" />
               <folding>
+                <element signature="e#32#355#0" expanded="false" />
                 <element signature="n#parent#0" expanded="false" />
                 <element signature="n#!!block;n#constructor#0;n#parent#0" expanded="false" />
                 <element signature="n#video#0" expanded="false" />
@@ -53,8 +54,37 @@
                 <element signature="n#time#0" expanded="false" />
                 <element signature="n#danmu#0" expanded="false" />
                 <element signature="n#danmuflag#0" expanded="false" />
-                <marker date="1515297234774" expanded="true" signature="4170:4220" ph="..." />
-                <marker date="1515297234774" expanded="true" signature="5719:5775" ph="..." />
+                <element signature="n#progress#0" expanded="false" />
+                <marker date="1515308422736" expanded="true" signature="4170:4220" ph="..." />
+                <marker date="1515308422736" expanded="true" signature="6011:6067" ph="..." />
+                <marker date="1515308422736" expanded="true" signature="7409:7880" ph="..." />
+                <marker date="1515308422736" expanded="true" signature="7497:7862" ph="..." />
+                <marker date="1515308422736" expanded="true" signature="7537:7581" ph="..." />
+                <marker date="1515308422736" expanded="true" signature="7637:7678" ph="..." />
+                <marker date="1515308422736" expanded="true" signature="7717:7761" ph="..." />
+                <marker date="1515308422736" expanded="true" signature="7800:7842" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+        <entry file="file://D:/ueksoft/code/video-player-master/public/js/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="198" column="41" lean-forward="false" selection-start-line="198" selection-start-column="37" selection-end-line="198" selection-end-column="41" />
+              <folding>
+                <marker date="1515216343628" expanded="true" signature="1332:1357" ph="..." />
+                <marker date="1515216343628" expanded="true" signature="2424:2440" ph="..." />
+                <marker date="1515216343628" expanded="true" signature="2904:2939" ph="..." />
+                <marker date="1515216343628" expanded="true" signature="4066:4519" ph="..." />
+                <marker date="1515216343628" expanded="true" signature="4108:4153" ph="..." />
+                <marker date="1515216343628" expanded="true" signature="4193:4502" ph="..." />
+                <marker date="1515216343628" expanded="true" signature="4707:4740" ph="..." />
+                <marker date="1515216343628" expanded="false" signature="5812:5821" ph="..." />
+                <marker date="1515216343628" expanded="true" signature="5822:5952" ph="..." />
+                <marker date="1515216343628" expanded="false" signature="5882:5891" ph="..." />
+                <marker date="1515216343628" expanded="true" signature="5892:5934" ph="..." />
               </folding>
             </state>
           </provider>
@@ -70,8 +100,8 @@
       <file leaf-file-name="video.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/video/public/css/video.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="166">
-              <caret line="6" column="25" lean-forward="true" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
+            <state relative-caret-position="300">
+              <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -85,6 +115,14 @@
         <option value="HTML File" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>ratio</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>change</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -100,8 +138,8 @@
         <option value="$PROJECT_DIR$/video/routes/index.js" />
         <option value="$PROJECT_DIR$/demo/zhongbei/video/public/js/video.js" />
         <option value="$PROJECT_DIR$/video/app.js" />
-        <option value="$PROJECT_DIR$/video/public/css/video.css" />
         <option value="$PROJECT_DIR$/video/views/video.html" />
+        <option value="$PROJECT_DIR$/video/public/css/video.css" />
         <option value="$PROJECT_DIR$/video/public/js/video.js" />
       </list>
     </option>
@@ -387,12 +425,13 @@
       <workItem from="1515199419413" duration="4668000" />
       <workItem from="1515205924867" duration="11190000" />
       <workItem from="1515228984078" duration="4516000" />
-      <workItem from="1515283683811" duration="10890000" />
+      <workItem from="1515283683811" duration="11142000" />
+      <workItem from="1515300478944" duration="4702000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31264000" />
+    <option name="totallyTimeSpent" value="36218000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
@@ -404,7 +443,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32974428" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32032302" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32032302" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -429,6 +468,62 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/video/app.js">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="16" column="12" lean-forward="false" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/video/views/video.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="11" column="6" lean-forward="false" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/video/public/img/danmu-active.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/video/public/css/video.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="6" column="25" lean-forward="true" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/video/public/js/video.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="236" column="29" lean-forward="false" selection-start-line="236" selection-start-column="29" selection-end-line="236" selection-end-column="29" />
+          <folding>
+            <element signature="e#32#355#0" expanded="false" />
+            <element signature="n#parent#0" expanded="false" />
+            <element signature="n#!!block;n#constructor#0;n#parent#0" expanded="false" />
+            <element signature="n#video#0" expanded="false" />
+            <element signature="n#controls#0" expanded="false" />
+            <element signature="n#play#0" expanded="false" />
+            <element signature="n#time#0" expanded="false" />
+            <element signature="n#danmu#0" expanded="false" />
+            <element signature="n#danmuflag#0" expanded="false" />
+            <element signature="n#progress#0" expanded="false" />
+            <marker date="1515308422736" expanded="true" signature="4170:4220" ph="..." />
+            <marker date="1515308422736" expanded="true" signature="6011:6067" ph="..." />
+            <marker date="1515308422736" expanded="true" signature="7409:7880" ph="..." />
+            <marker date="1515308422736" expanded="true" signature="7497:7862" ph="..." />
+            <marker date="1515308422736" expanded="true" signature="7537:7581" ph="..." />
+            <marker date="1515308422736" expanded="true" signature="7637:7678" ph="..." />
+            <marker date="1515308422736" expanded="true" signature="7717:7761" ph="..." />
+            <marker date="1515308422736" expanded="true" signature="7800:7842" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/video/app.js">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
@@ -448,6 +543,7 @@
         <state relative-caret-position="2790">
           <caret line="93" column="10" lean-forward="false" selection-start-line="93" selection-start-column="10" selection-end-line="93" selection-end-column="10" />
           <folding>
+            <element signature="e#32#355#0" expanded="false" />
             <element signature="n#parent#0" expanded="false" />
             <element signature="n#!!block;n#constructor#0;n#parent#0" expanded="false" />
             <element signature="n#video#0" expanded="false" />
@@ -456,8 +552,15 @@
             <element signature="n#time#0" expanded="false" />
             <element signature="n#danmu#0" expanded="false" />
             <element signature="n#danmuflag#0" expanded="false" />
-            <marker date="1515297234774" expanded="true" signature="4170:4220" ph="..." />
-            <marker date="1515297234774" expanded="true" signature="5719:5775" ph="..." />
+            <element signature="n#progress#0" expanded="false" />
+            <marker date="1515308422736" expanded="true" signature="4170:4220" ph="..." />
+            <marker date="1515308422736" expanded="true" signature="6011:6067" ph="..." />
+            <marker date="1515308422736" expanded="true" signature="7409:7880" ph="..." />
+            <marker date="1515308422736" expanded="true" signature="7497:7862" ph="..." />
+            <marker date="1515308422736" expanded="true" signature="7537:7581" ph="..." />
+            <marker date="1515308422736" expanded="true" signature="7637:7678" ph="..." />
+            <marker date="1515308422736" expanded="true" signature="7717:7761" ph="..." />
+            <marker date="1515308422736" expanded="true" signature="7800:7842" ph="..." />
           </folding>
         </state>
       </provider>
@@ -533,22 +636,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/video/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="16" column="12" lean-forward="false" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/video/public/css/video.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="6" column="25" lean-forward="true" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/video/public/img/danmu-active.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -561,17 +648,54 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/video/views/video.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
+        <state relative-caret-position="330">
           <caret line="11" column="6" lean-forward="false" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/video/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="20" column="32" lean-forward="true" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/ueksoft/code/video-player-master/public/js/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="198" column="41" lean-forward="false" selection-start-line="198" selection-start-column="37" selection-end-line="198" selection-end-column="41" />
+          <folding>
+            <marker date="1515216343628" expanded="true" signature="1332:1357" ph="..." />
+            <marker date="1515216343628" expanded="true" signature="2424:2440" ph="..." />
+            <marker date="1515216343628" expanded="true" signature="2904:2939" ph="..." />
+            <marker date="1515216343628" expanded="true" signature="4066:4519" ph="..." />
+            <marker date="1515216343628" expanded="true" signature="4108:4153" ph="..." />
+            <marker date="1515216343628" expanded="true" signature="4193:4502" ph="..." />
+            <marker date="1515216343628" expanded="true" signature="4707:4740" ph="..." />
+            <marker date="1515216343628" expanded="false" signature="5812:5821" ph="..." />
+            <marker date="1515216343628" expanded="true" signature="5822:5952" ph="..." />
+            <marker date="1515216343628" expanded="false" signature="5882:5891" ph="..." />
+            <marker date="1515216343628" expanded="true" signature="5892:5934" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/video/public/css/video.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/video/public/js/video.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="255" column="20" lean-forward="false" selection-start-line="255" selection-start-column="20" selection-end-line="255" selection-end-column="20" />
+        <state relative-caret-position="-961">
+          <caret line="285" column="5" lean-forward="true" selection-start-line="285" selection-start-column="5" selection-end-line="285" selection-end-column="5" />
           <folding>
+            <element signature="e#32#355#0" expanded="false" />
             <element signature="n#parent#0" expanded="false" />
             <element signature="n#!!block;n#constructor#0;n#parent#0" expanded="false" />
             <element signature="n#video#0" expanded="false" />
@@ -580,8 +704,15 @@
             <element signature="n#time#0" expanded="false" />
             <element signature="n#danmu#0" expanded="false" />
             <element signature="n#danmuflag#0" expanded="false" />
-            <marker date="1515297234774" expanded="true" signature="4170:4220" ph="..." />
-            <marker date="1515297234774" expanded="true" signature="5719:5775" ph="..." />
+            <element signature="n#progress#0" expanded="false" />
+            <marker date="1515308422736" expanded="true" signature="4170:4220" ph="..." />
+            <marker date="1515308422736" expanded="true" signature="6011:6067" ph="..." />
+            <marker date="1515308422736" expanded="true" signature="7409:7880" ph="..." />
+            <marker date="1515308422736" expanded="true" signature="7497:7862" ph="..." />
+            <marker date="1515308422736" expanded="true" signature="7537:7581" ph="..." />
+            <marker date="1515308422736" expanded="true" signature="7637:7678" ph="..." />
+            <marker date="1515308422736" expanded="true" signature="7717:7761" ph="..." />
+            <marker date="1515308422736" expanded="true" signature="7800:7842" ph="..." />
           </folding>
         </state>
       </provider>
